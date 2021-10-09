@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  if data
+    p #{JSON.parse(data).key}
+  else if newdata
+    p #{JSON.parse(newdata).name}
+    p #{JSON.parse(newdata).stringlength}
+  else if fullname
+    p #{JSON.parse(fullname).firstname}
+    p #{JSON.parse(fullname).lastname}
+
+  else
+    p 'Welcome to my app!'
+
+
